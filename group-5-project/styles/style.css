@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Beginn CSS Image Bild */
+
+.image, .imagekathi, .imagejulia, .imagemeli, .imagejulian, .imagetom {
+  max-width: 980px;
+  text-align: center!important;
+  display: block;
+  vertical-align: middle;
+  /* Verlinkung zum Image-Bild */
+  background-image:url(../images/wood-header.jpg);
+  padding: 100px 0;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+/* Hier bei dem Pfal die Hintergrund-Bilder für euch ändern! Wenn es nicht geht, dann über die Ordner Struktur das Bild suchen; sonst an Kathi senden und ich füge es final ein; Format: 1920 x 654px */
+/* Header-Hintergrund Bild Kathi */
+.imagekathi {
+    background-image:url(../images/header-kathi.jpg);
+}
+
+/* Header-Hintergrund Bild Julia */
+.imagejulia {
+    background-image:url(../images/header-island.jpg);
+}
+
+/* Header-Hintergrund Bild Meli */
+.imagemeli {
+    background-image: url(../images/header-meli.jpg);
+}
+
+/* Header-Hintergrund Bild Tom */
+.imagetom {
+    background-image:url(../images/wood-header.jpg);
+}
+
+/* Header-Hintergrund Bild Julian */
+.imagejulian {
+    background-image:url(../images/wood-header.jpg);
+}
+
+.text {
+  padding:12px 24px!important;
+  border: 1px solid #fff!important;
+  letter-spacing: 4px;
+  color: #fff!important;
+  text-align:center!important;
+  display: inline-block;
+  width: auto;
+}
+
+/* Ende CSS Image Bild */
+
+/* Beginn CSS Navigation */
+
+a:link    { color:#FFF;   text-decoration:none; }
+a:visited { color:#FFF;  text-decoration:line-through; }
+a:focus   { color:#FFF;  text-decoration:overline; }
+a:hover   { color:#FFF;    text-decoration:overline; }
+a:active  { color:#FFF; text-decoration:underline; }
+		
+.box1, .box2, .box3, .box4, .box5, .box6{
+     float: left;
+     width: 10%;
+     padding: 5px;
+	 margin-right: 1%;
+     background:#333;
+     box-sizing: border-box;
+	 font-family: 'Lato', bold;
+ 	 color:#FFF;
+ 	 font-size: 100%;
+ 	 letter-spacing: 1px;
+ 	 text-align: center; 
+}
+/* Farbe Julia */
+.box2 {
+    background:#030;
+}
+/* Farbe Meli */
+.box3 {
+    background:#060;
+}
+/* Farbe Kathi */
+.box4 {
+    background:#090
+}
+/* Farbe Tom */
+.box5 {
+    background:#0C0;
+}
+/* Farbe Julian */
+.box6 {
+    background:#00FF00;
+}
+
+/* Ende CSSS Navigation */
+
+/* Beginn CSS klassische Seite */
+
+html {
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 1.5; 
+  background-color: #ebebeb;
+}
+h1 {
+ font-family: 'Lato', sans-serif;
+ font-size: 300%;
+ letter-spacing: -1px;
+ color: white;
+ }
+
+h2 {
+  font-family: "Quicksand", bold;
+  font-size: 150%;
+  letter-spacing: -1px;
+  /* Farbe für Überschriften je Land */
+  color: #060;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h3 {
+  font-family: 'Quicksand';
+  font-size: 125%;
+  letter-spacing: -1px;
+  /* Farbe für Überschriften je Land */
+  color: #060;
+  margin-left: 20%;
+  }
+
+h4 {
+  font-family: 'Quicksand';
+  font-size: 105%;
+  letter-spacing: -1px;
+  /* Farbe für Überschriften je Land */
+  color: #060;
+  margin-left: 20%;
+  }
+p {
+	 margin-left: 20%;
+	 margin-right: 20%;
+}
+
+.tipps {
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom:30px;
+  /* Farbe für Hintergrund je Land */
+  background-color: #060;
+  padding: 10px 20px 10px 20px;
+  color: white;
+}
+
+.tipps h3 {
+  color: white;
+  margin-left: 0px;
+}
+
+blockquote {
+ margin-left: 35%;
+ margin-right: 35%;
+ font-size: 110%;
+ text-align: center;
+}
+
+footer {
+	/* Hier Farbe des Footers ändern */
+	background-color: #060;
+	height:200px;
+	margin-bottom: none;
+}
+
+/* Ende CSS klassische Seite */
+
+/* Beginn JavaScript Bilder-Slideshow */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* Ende JavaScript Bilder-Slideshow */
